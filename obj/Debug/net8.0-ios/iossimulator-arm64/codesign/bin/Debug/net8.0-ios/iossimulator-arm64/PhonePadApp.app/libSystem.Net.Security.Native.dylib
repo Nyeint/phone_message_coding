@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/nyeintnyeintsan/development/c-sharp/PhonePadApp/bin/Debug/net8.0-ios/iossimulator-arm64/PhonePadApp.app/libSystem.Net.Security.Native.dylib

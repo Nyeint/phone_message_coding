@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/nyeintnyeintsan/development/c-sharp/PhonePadApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/nyeintnyeintsan/development/c-sharp/PhonePadApp/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/PhonePadApp.app

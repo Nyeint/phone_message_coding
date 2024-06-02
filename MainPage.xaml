@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhonePadApp.MainPage"
+             BackgroundColor="#4F5F92">
+    <ContentPage.Resources>
+        <Style x:Key="CustomButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="TextColor" Value="DarkBlue" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="CornerRadius" Value="10" />
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+        <Frame BorderColor="LightGray" CornerRadius="10" Padding="10">
+            <Label x:Name="DisplayLabel" Text=" " FontSize="24" />
+        </Frame>
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- First Row -->
+            <Button Text="1 &amp;'(" Grid.Row="0" Grid.Column="0" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="2 abc" Grid.Row="0" Grid.Column="1" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="3 def" Grid.Row="0" Grid.Column="2" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+
+            <!-- Second Row -->
+            <Button Text="4 ghi" Grid.Row="1" Grid.Column="0" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="5 jkl" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="6 mno" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+
+            <!-- Third Row -->
+            <Button Text="7 pqrs" Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="8 tuv" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="9 wxyz" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+
+            <!-- Fourth Row -->
+            <Button Text="* back" Grid.Row="3" Grid.Column="0" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="0 space" Grid.Row="3" Grid.Column="1" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+            <Button Text="# send" Grid.Row="3" Grid.Column="2" Clicked="OnButtonClicked" Style="{StaticResource CustomButtonStyle}" Pressed="OnButtonPressed" Released="OnButtonReleased"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

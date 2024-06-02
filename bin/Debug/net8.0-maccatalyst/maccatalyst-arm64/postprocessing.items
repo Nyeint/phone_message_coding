@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="PhonePadApp.app/Contents/MacOS/PhonePadApp">
+      <BCSymbolMapName>PhonePadApp.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>PhonePadApp.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/nyeintnyeintsan/development/c-sharp/PhonePadApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>PhonePadApp.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/nyeintnyeintsan/development/c-sharp/PhonePadApp</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
